@@ -1,4 +1,6 @@
 .env
 .env.testing
 /vendor
+/vendor-bin/**/vendor
 /.idea
+.phpunit.result.cache

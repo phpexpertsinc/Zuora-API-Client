@@ -14,7 +14,7 @@
 
 namespace PHPExperts\ZuoraClient\Tests\Integration\Managers;
 
-use PHPExperts\ZuoraClient\RESTAuth;
+use PHPExperts\ZuoraClient\RESTAuthStrat as RESTAuth;
 use PHPExperts\ZuoraClient\Tests\TestCase;
 use PHPExperts\ZuoraClient\ZuoraClient;
 
@@ -38,5 +38,10 @@ class AccountTest extends TestCase
         $zuoraGUID = '8a80aba7693a825401695a4a53663134';
         $response = $this->api->account->fetch($zuoraGUID);
         dd($response);
+    }
+
+    public function testCanUpdateAccountDetails()
+    {
+
     }
 }
